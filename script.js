@@ -35,12 +35,12 @@ function preload(){
  spriteSheet[7] = loadImage("https://image.ibb.co/dk6HSq/ice-horse-run-00.png");
  jump[4] = loadImage("https://image.ibb.co/kEa80A/ice-horse-jump-02.png");
  Land_img = loadImage("https://image.ibb.co/fEdXvA/tile-fall-2.png");
- Background1 = loadImage("https://image.ibb.co/bN8nTV/scroll-bg-far.png");
+ Background1 = loadImage("assets/bg.jpg");
 Cloud = loadImage("https://image.ibb.co/iT0jQA/8i6o-A9x5-T.png");
-rock = loadImage("https://image.ibb.co/gEeiJV/8b1eb71d81e991476ed7607d73f61644.png");
-coin = loadImage("https://image.ibb.co/jRAp0y/coin.png") ;
-Enemies[0] = loadImage("https://image.ibb.co/nPQwOV/Haunter-Shiny.png");
- Background2 = loadImage("https://preview.ibb.co/gtT1sq/midnight-volcano-brad-simpson.jpg" );
+rock = loadImage("assets/good.png");
+coin = loadImage("assets/unicoin.png") ;
+Enemies[0] = loadImage("assets/evil.png");
+ Background2 = loadImage("assets/bg.jpg" );
 }
 
 var sprit ;
@@ -59,7 +59,7 @@ button.hide();
 for(var i =0;i<3;i++){
     life.push(new helath(i*20));
 }
-var a = confirm(`1.Click "Ok" to play in Light mode\n2.click "Cancel" to play in dark mode `);
+var a = alert(` 1 Unicoin = 1 Point \n 1 Little Eesh = 10 Points \n 1 Villain = -1 Life \n Click "Ok" to play`);
 if(a==true){
     theme.img = Background1;
     }
